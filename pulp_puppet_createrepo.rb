@@ -5,10 +5,13 @@
 require 'digest'
 
 
-files = Dir.entries(Dir.pwd)
+mypwd = Dir.pwd 
+
+files = Dir.entries(mypwd)
 
 
-file = File.open(Dir.pwd + "/PULP_MANIFEST", "w")
+file = File.open(mypwd + "/PULP_MANIFEST", "w")
+
 
 
 files.each do |file_name|
